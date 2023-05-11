@@ -1,0 +1,160 @@
+html {
+    cursor:  url('./assets/cursor.png'), auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 20px;
+}
+
+.circle:hover {
+    cursor: none;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    grid-gap: 20px;
+    white-space: nowrap;
+    padding: 20px;
+}
+
+.pools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: left;
+    font-family: 'Jetbrains Mono';
+    font-size: 5em;
+    padding: 20px;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Jetbrains Mono';
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Jetbrains Mono';
+    font-size: 1em;
+}
+
+img {
+    width: 30%;
+    height: auto;
+    z-index: 2;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    margin: 20px;
+}
+
+button:hover {
+    background-color:none;
+    cursor: pointer;
+}
+
+.btn-filter {
+    font-family: 'Jetbrains Mono';
+    font-size: 1em;
+}
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 200px; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
+    padding-top: 50px; /* Place content 60px from the top */
+    padding-left: 20px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: 'Jetbrains Mono';
+    font-size: 1em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: none;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: none;
+  }
+
+  .paneltext {
+    color: white;
+    font-family: 'Jetbrains Mono';
+    font-size: 1em;
+  }
+/* .diving:hover {
+    background-color: #C3F4FF;
+}
+
+.intermediate:hover {
+    background-color: #9BDEEE;
+}
+
+.wading:hover {
+    background-color: #7DBEDD;
+}
+
+.olympic:hover {
+    background-color: #669DCD;
+}
+
+.mini:hover {
+    background-color: #5873C3;
+} */
